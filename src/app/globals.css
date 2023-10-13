@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.25%;
+  color: white;
+  background: #110f0f;
+}
+
+body {
+  margin: 0;
+}

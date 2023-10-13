@@ -1,0 +1,99 @@
+.headerContainer {
+  min-height: 100vh;
+  background: url("../../../public//hero//Vector.svg") center fixed no-repeat,
+    url("../../../public//hero//orange.png") no-repeat bottom left,
+    url("../../../public//hero/purple.png") no-repeat top right;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.title {
+  font-size: 9rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80px;
+
+  margin: 0;
+}
+
+.span {
+  background: var(
+    --Gradient,
+    linear-gradient(
+      218deg,
+      #9de8ee 25.05%,
+      #9de8ee 25.05%,
+      #fa7c0b 51.71%,
+      #9f8ced 79.45%
+    )
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80px;
+}
+
+.text {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+
+  margin: 16px 0 32px 0;
+}
+
+.containerText {
+  width: 90%;
+
+  max-width: 550px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.input {
+  width: 100%;
+
+  background: black;
+  border: 1px solid white;
+
+  border-radius: 30px;
+
+  color: white;
+
+  padding: 10px 20px;
+
+  font-size: 1.6rem;
+}
+
+.button {
+  color: #000;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+
+  background: #ffa800;
+  border: 1px solid black;
+  border-radius: 40px;
+  padding: 15px 24px;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 6rem;
+  }
+}

@@ -1,8 +1,8 @@
 .headerContainer {
   min-height: 100vh;
   background: url("../../../public//hero//Vector.svg") center fixed no-repeat,
-    url("../../../public//hero//orange.png") no-repeat bottom left,
-    url("../../../public//hero/purple.png") no-repeat top right;
+    url("../../../public//hero//orange.png") no-repeat bottom left fixed,
+    url("../../../public//hero/purple.png") no-repeat top right fixed;
 
   display: flex;
   flex-direction: column;

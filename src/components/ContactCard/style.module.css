@@ -1,0 +1,15 @@
+.containerSection {
+  width: 100%;
+  margin: auto;
+  padding: 5% 10%;
+  background: rgba(185, 54, 54, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.title {
+  font-size: 5rem;
+}
+
+.item {
+  font-size: 3rem;
+}

@@ -14,14 +14,13 @@ function ChooseUs() {
           />
         </picture>
         <div className={style.containerText}>
-          <h2 className={style.title}>Why choose us</h2>
+          <h2 className={style.title}>Por que elegirnos? </h2>
           <p className={style.text}>
-            Commodo diam vulputate dui proin quis enim nibh. Non integer ac
-            libero facilisis hendrerit a at. Nisi sem ut sed sed faucibus at eu
-            elit. Morbi aliquam porttitor mattis consequat neque, tellus
-            blandit.
+            Somos una agencia de creación de software especializada en
+            solucionar tus problemas y ofrecer soluciones dentro de nuestros
+            servicios web.
           </p>
-          <button className={style.button}>Let’s connect </button>
+          {/* <button className={style.button}>Vea mas </button> */}
         </div>
       </article>
     </section>

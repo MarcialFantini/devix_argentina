@@ -23,7 +23,7 @@ function Navbar() {
                 alt="icon nav"
               ></Image>
             </picture>
-            <h2 className={style.title}>Shadient.co</h2>
+            <h2 className={style.title}>Devix</h2>
           </div>
 
           <ul className={style.list}>

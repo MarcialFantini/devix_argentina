@@ -5,16 +5,13 @@ function BarHomeCompany() {
     <section className={style.section}>
       <div className={style.containerAll}>
         <div>
-          <h2 className={style.title}>
-            Trusted by 200+ companies around the world
-          </h2>
+          <h2 className={style.title}>Desarrolladores con mucha experiencia</h2>
         </div>
         <div>
           <p className={style.text}>
-            Vulputate molestie molestie amet leo blandit accumsan. Sapien sed
-            amet tellus purus sit odio eget. Diam morbi faucibus vitae neque id
-            in. Nullam sed et dapibus nunc, porta enim orci urna, sit. Lectus
-            ac.
+            Somos Desarrolladores con mucha experiencia en solucionando
+            problemas y dando los mejores servicios, destinado a medida para
+            cada requerimiento.
           </p>
         </div>
       </div>

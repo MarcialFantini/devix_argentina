@@ -17,31 +17,31 @@ export const data: props[] = [
   {
     title: "Branding",
     src: item6,
-    text: "Egestas tellus nunc proin amet tellus tincidunt lacus consequat. Ultrices",
+    text: "Brindamos y nos ajustamos a tus estilos para tus paginas web que desarrollaremos.",
   },
   {
-    title: "Web development",
+    title: "Landing page",
     src: item1,
-    text: "Sed faucibus faucibus egestas volutpat, accumsan adipiscing egestas est. Auctor et leo urna est.",
+    text: "Creamos tu primera pagina web para que tengas una presencia web y consigas mas clientes. ",
   },
   {
     title: "Digital marketing",
     src: item2,
-    text: "Sed faucibus faucibus egestas volutpat, accumsan adipiscing egestas est. Auctor et leo urna est.",
+    text: "Nos encargamos de planear y ejecutar tus estrategias de marketing digital",
   },
   {
-    title: "Mobile App",
+    title: "Blogs",
     src: item3,
-    text: "Egestas tellus nunc proin amet tellus tincidunt lacus consequat. Ultrices",
+    text: "Servicio de creación de blog, newsletter o sistema en el cual vas a poder comunicar temas a tus posibles clientes.",
   },
   {
     title: "SEO",
     src: item4,
-    text: "Integer ante non nunc, eget est justo vel semper nunc. Lacus ",
+    text: "Integramos tecnologías para que puedas aparecer de mejor manera en los buscadores de internet. ",
   },
   {
-    title: "User testing",
+    title: "eCommerce",
     src: item5,
-    text: "Sed faucibus faucibus egestas volutpat, accumsan adipiscing egestas est. Auctor et leo urna est.",
+    text: "Servicio de creación de eCommerce, en el cual nos encargamos de crear para que puedas vender tus servicios y productos. ",
   },
 ];

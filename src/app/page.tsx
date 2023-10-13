@@ -4,7 +4,10 @@ import BarHomeCompany from "@/components/BarHomeCompany";
 import WeOffer from "@/components/WeOffer";
 import ChooseUs from "@/components/ChooseUs";
 import OurWork from "@/components/OurWork";
-import Discuss from "@/components/Discuss";
+import BannerImage from "@/components/BannerImage";
+
+import codeSrc from "../../public/banner/code.jpg";
+import ContactCard from "@/components/ContactCard";
 
 export default function Home() {
   return (
@@ -12,9 +15,15 @@ export default function Home() {
       <HeroHome></HeroHome>
       <BarHomeCompany></BarHomeCompany>
       <WeOffer></WeOffer>
+      <BannerImage src={"/banner/work.jpg"}></BannerImage>
       <ChooseUs></ChooseUs>
+      <BannerImage src={"/banner/code.jpg"}></BannerImage>
       <OurWork></OurWork>
-      <Discuss></Discuss>
+      <BannerImage src={"/banner/contact.jpg"}>
+        {<ContactCard></ContactCard>}
+      </BannerImage>
+
+      {/* <Discuss></Discuss> */}
     </main>
   );
 }

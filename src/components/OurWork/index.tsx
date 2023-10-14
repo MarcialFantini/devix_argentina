@@ -1,47 +1,57 @@
 import style from "./style.module.css";
 import CardWorkBig from "../CardWorkBig";
 
+import srcImage1 from "../../../public/works/item1.png";
+import srcImage2 from "../../../public/works/item2.png";
+import srcImage3 from "../../../public/works/item3.png";
+import srcImage4 from "../../../public/works/item4.png";
+import srcImage5 from "../../../public/works/item5.png";
+
 function OurWork() {
   return (
-    <section className={style.section}>
+    <section id="proyectos" className={style.section}>
       <div className={style.containerGrid}>
         <div className={style.column + " " + style.columnFirst}>
-          <h2 className={style.title}>Some pieces of our work</h2>
+          <h2 className={style.title}>Alguno de nuestros proyectos:</h2>
           <p className={style.text}>
-            Risus commodo id odio turpis pharetra elementum. Pulvinar porta
-            porta feugiat scelerisque in elit. Morbi rhoncus, tellus, eros
-            consequat magna semper orci a tincidunt.
+            Estos son modelos paradigmáticos de paginas web las cuales podemos
+            crear, y adaptarlas bajo tus parámetros de forma ideal para tu
+            negocio.
           </p>
-          <button className={style.btn}>Show More</button>
+          {/* <button className={style.btn}>Show More</button> */}
         </div>
         <div className={style.column}>
           <CardWorkBig
             isImg={true}
             category="Website"
-            title="Creative landing page"
+            title="My City Lawyers Directory"
+            src={srcImage1}
           ></CardWorkBig>
           <CardWorkBig
+            src={srcImage2}
+            isImg
             category="Website"
-            title="Creative landing page"
+            title="Zjox Softwarks"
           ></CardWorkBig>
           <CardWorkBig
+            src={srcImage3}
+            isImg
             category="Website"
-            title="Creative landing page"
+            title="Cultivating A Sustainable Future "
           ></CardWorkBig>
         </div>
         <div className={style.column}>
           <CardWorkBig
+            isImg
+            src={srcImage4}
             category="Website"
-            title="Creative landing page"
+            title="AVJI "
           ></CardWorkBig>
           <CardWorkBig
             isImg={true}
+            src={srcImage5}
             category="Website"
-            title="Creative landing page"
-          ></CardWorkBig>
-          <CardWorkBig
-            category="Website"
-            title="Creative landing page"
+            title="Power up with coffee"
           ></CardWorkBig>
         </div>
       </div>

@@ -4,7 +4,7 @@ import style from "./style.module.css";
 
 function WeOffer() {
   return (
-    <section className={style.sectionOffer}>
+    <section id="servicios" className={style.sectionOffer}>
       <h2 className={style.title}>Nuestros servicios</h2>
       <p className={style.text}>Servicios web de calidad hecho a tu medida</p>
 

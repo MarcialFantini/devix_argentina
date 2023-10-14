@@ -4,6 +4,27 @@
   padding: 5% 10%;
   background: rgba(185, 54, 54, 0.1);
   backdrop-filter: blur(10px);
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.row picture {
+  max-width: 40px;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .title {
@@ -12,4 +33,11 @@
 
 .item {
   font-size: 3rem;
+  margin: 0;
+}
+
+@media (max-width: 425px) {
+  .item {
+    font-size: 2rem;
+  }
 }

@@ -6,7 +6,6 @@ import ChooseUs from "@/components/ChooseUs";
 import OurWork from "@/components/OurWork";
 import BannerImage from "@/components/BannerImage";
 
-import codeSrc from "../../public/banner/code.jpg";
 import ContactCard from "@/components/ContactCard";
 
 export default function Home() {

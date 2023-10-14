@@ -22,33 +22,28 @@ function OurWork() {
         </div>
         <div className={style.column}>
           <CardWorkBig
-            isImg={true}
             category="Website"
             title="My City Lawyers Directory"
             src={srcImage1}
           ></CardWorkBig>
           <CardWorkBig
             src={srcImage2}
-            isImg
             category="Website"
             title="Zjox Softwarks"
           ></CardWorkBig>
           <CardWorkBig
             src={srcImage3}
-            isImg
             category="Website"
             title="Cultivating A Sustainable Future "
           ></CardWorkBig>
         </div>
         <div className={style.column}>
           <CardWorkBig
-            isImg
             src={srcImage4}
             category="Website"
             title="AVJI "
           ></CardWorkBig>
           <CardWorkBig
-            isImg={true}
             src={srcImage5}
             category="Website"
             title="Power up with coffee"

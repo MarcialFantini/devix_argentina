@@ -17,7 +17,7 @@ export default function Home() {
       <BannerImage src={"/banner/work.jpg"}></BannerImage>
       <ChooseUs></ChooseUs>
       <BannerImage src={"/banner/code.jpg"}></BannerImage>
-      <OurWork></OurWork>
+      {/* <OurWork></OurWork> */}
       <BannerImage src={"/banner/contact.jpg"}>
         {<ContactCard></ContactCard>}
       </BannerImage>

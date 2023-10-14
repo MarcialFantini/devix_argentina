@@ -1,11 +1,11 @@
 import style from "./style.module.css";
 import CardWorkBig from "../CardWorkBig";
 
-import srcImage1 from "../../../public/works/item1.png";
-import srcImage2 from "../../../public/works/item2.png";
-import srcImage3 from "../../../public/works/item3.png";
-import srcImage4 from "../../../public/works/item4.png";
-import srcImage5 from "../../../public/works/item5.png";
+import srcImage1 from "./item1.png";
+import srcImage2 from "./item2.png";
+import srcImage3 from "./item3.png";
+import srcImage4 from "./item4.png";
+import srcImage5 from "./item5.png";
 
 function OurWork() {
   return (

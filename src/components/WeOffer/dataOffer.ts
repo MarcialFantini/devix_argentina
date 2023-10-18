@@ -27,7 +27,7 @@ export const data: props[] = [
   {
     title: "Digital marketing",
     src: item2,
-    text: "Nos encargamos de planear y ejecutar tus estrategias de marketing digital",
+    text: "Nos encargamos de planear y ejecutar tus estrategias de marketing digital.",
   },
   {
     title: "Blogs",

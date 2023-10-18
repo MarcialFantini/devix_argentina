@@ -10,7 +10,7 @@ function WeOffer() {
     <section id="servicios" className={style.sectionOffer}>
       <h2 className={style.title}>Nuestros servicios</h2>
       <p className={style.text}>
-        Servicios web de calidad hecho bajo tu medida y parámetros
+        Servicios web de calidad hecho bajo tu medida y parámetros.
       </p>
 
       <div className={style.gridOffer}>

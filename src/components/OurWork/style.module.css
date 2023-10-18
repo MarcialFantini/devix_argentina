@@ -23,7 +23,8 @@
 }
 
 .title {
-  color: #fff;
+  color: white;
+  text-shadow: #fe2afc 5px 5px 10px;
   font-size: 4rem;
   font-style: normal;
   font-weight: 700;
@@ -32,7 +33,7 @@
 }
 
 .text {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255);
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 500;

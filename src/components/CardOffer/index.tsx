@@ -1,6 +1,10 @@
+"use client";
+
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
 import style from "./style.module.css";
+import { useIntersectionObserver } from "@/hooks/observer";
+import { useRef, useState } from "react";
 
 interface props {
   title: string;
@@ -9,8 +13,15 @@ interface props {
 }
 
 function CardOffer({ title, src, text }: props) {
+  const ref = useRef(null);
+  const { isVisible } = useIntersectionObserver(ref);
   return (
-    <article className={style.containerCard}>
+    <article
+      ref={ref}
+      className={
+        style.containerCard + " " + (isVisible ? style.activeCard : "")
+      }
+    >
       <picture>
         <Image src={src} alt={title}></Image>
       </picture>

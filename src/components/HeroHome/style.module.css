@@ -1,14 +1,15 @@
 .headerContainer {
   min-height: 100vh;
-  background: url("../../../public//hero//Vector.svg") center fixed no-repeat,
-    url("../../../public//hero//orange.png") no-repeat bottom left fixed,
-    url("../../../public//hero/purple.png") no-repeat top right fixed;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 50px 0;
+
+  position: relative;
+
+  overflow: hidden;
 }
 
 .title {
@@ -20,16 +21,66 @@
   margin: 0;
 }
 
+.picture {
+  position: absolute;
+
+  aspect-ratio: 1;
+  width: 400px;
+}
+
+@keyframes Picture1 {
+  0%,
+  100% {
+    transform: rotate(0);
+    left: -150px;
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  50% {
+    left: calc(100% - 150px);
+  }
+  75% {
+    transform: rotate(-20deg);
+  }
+}
+@keyframes Picture2 {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+
+  75% {
+    transform: rotate(-20deg);
+  }
+}
+.picture1 {
+  left: -150px;
+  bottom: -200px;
+  animation: Picture1 10s infinite linear;
+}
+
+.picture2 {
+  right: -100px;
+  top: -100px;
+  animation: Picture2 5s infinite linear;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .span {
-  background: var(
-    --Gradient,
-    linear-gradient(
-      218deg,
-      #9de8ee 25.05%,
-      #9de8ee 25.05%,
-      #fa7c0b 51.71%,
-      #9f8ced 79.45%
-    )
+  background: rgb(48, 244, 248);
+  background: linear-gradient(
+    90deg,
+    rgba(48, 244, 248, 1) 36%,
+    rgba(254, 42, 252, 1) 66%
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -41,7 +92,7 @@
 
 .text {
   color: rgba(255, 255, 255, 0.6);
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-style: normal;
   font-weight: 400;
   line-height: 30px; /* 150% */
@@ -51,9 +102,12 @@
 }
 
 .containerText {
+  gap: 30px;
+
   width: 90%;
 
-  max-width: 550px;
+  position: relative;
+  z-index: 3;
 }
 
 .row {
@@ -95,5 +149,19 @@
 @media (max-width: 768px) {
   .title {
     font-size: 6rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .containerText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: 16rem;
   }
 }

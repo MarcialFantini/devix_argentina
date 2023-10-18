@@ -12,8 +12,9 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <HeroHome></HeroHome>
-      <BarHomeCompany></BarHomeCompany>
       <WeOffer></WeOffer>
+      <BarHomeCompany></BarHomeCompany>
+
       <BannerImage src={"/banner/work.jpg"}></BannerImage>
       <ChooseUs></ChooseUs>
       <BannerImage src={"/banner/code.jpg"}></BannerImage>

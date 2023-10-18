@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import CardOffer from "../CardOffer";
 import { data } from "./dataOffer";
 import style from "./style.module.css";
@@ -6,7 +9,9 @@ function WeOffer() {
   return (
     <section id="servicios" className={style.sectionOffer}>
       <h2 className={style.title}>Nuestros servicios</h2>
-      <p className={style.text}>Servicios web de calidad hecho a tu medida</p>
+      <p className={style.text}>
+        Servicios web de calidad hecho bajo tu medida y parámetros
+      </p>
 
       <div className={style.gridOffer}>
         {data.map((item, index) => {

@@ -1,0 +1,12 @@
+.section {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, fuchsia, rgba(255, 0, 255, 0));
+}

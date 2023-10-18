@@ -1,7 +1,11 @@
-import React from "react";
+import style from "./style.module.css";
 
 function XdRouter() {
-  return <div>XdRouter</div>;
+  return (
+    <div className={style.section}>
+      <div className={style.circle}>circle</div>
+    </div>
+  );
 }
 
 export default XdRouter;

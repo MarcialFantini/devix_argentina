@@ -1,9 +1,11 @@
 .sectionOffer {
-  width: 90%;
-  max-width: 1200px;
+  width: 100%;
+
   margin: auto;
 
-  padding: 60px 0;
+  padding: 150px 5%;
+
+  overflow: hidden;
 }
 
 .gridOffer {
@@ -14,7 +16,8 @@
 }
 
 .title {
-  color: #fff;
+  color: white;
+  text-shadow: #fe2afc 5px 5px 10px;
   text-align: center;
   font-size: 4rem;
   font-style: normal;
@@ -32,4 +35,19 @@
   line-height: 24px; /* 150% */
   letter-spacing: 0.32px;
   margin: 24px 0 40px 0;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 6rem;
+  }
+  .text {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gridOffer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

@@ -5,11 +5,13 @@
 
   padding: 150px 0;
   background: black;
+
+  overflow: hidden;
 }
 
 .article {
-  width: 90%;
-  max-width: 1400px;
+  width: 100%;
+  padding: 0 5%;
   margin: auto;
 
   display: grid;
@@ -42,6 +44,15 @@
 
 .containerText {
   min-height: 200px;
+
+  position: relative;
+
+  transition: all 0.3s;
+  transform: translate(200px);
+}
+
+.active {
+  transform: translate(0);
 }
 
 .title {

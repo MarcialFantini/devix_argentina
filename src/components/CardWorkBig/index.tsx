@@ -1,6 +1,9 @@
+"use client";
 import Image from "next/image";
 import style from "./style.module.css";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import { useIntersectionObserver } from "@/hooks/observer";
+import { useRef } from "react";
 
 function CardWorkBig({
   category,
@@ -12,8 +15,14 @@ function CardWorkBig({
   title: string;
   src: string | StaticImport;
 }) {
+  const ref = useRef(null);
+  const { isVisible } = useIntersectionObserver(ref);
+
   return (
-    <article className={style.article}>
+    <article
+      ref={ref}
+      className={style.article + " " + (isVisible ? style.active : "")}
+    >
       <picture className={style.picture}>
         <Image className={style.img} src={src} alt=""></Image>
       </picture>

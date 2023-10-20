@@ -1,0 +1,52 @@
+.containerSection {
+  min-height: 95vh;
+}
+
+.article {
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto;
+}
+
+.title {
+  font-size: 4.2rem;
+  color: white;
+  text-shadow: #fe2afc 5px 5px 10px;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 2.4rem;
+}
+
+@keyframes Shadow {
+  0%,
+  100% {
+    box-shadow: 4px 4px 10px #2a5bfe;
+  }
+  50% {
+    box-shadow: 10px 5px 10px 0px #2a5bfe;
+  }
+}
+
+.picture {
+  width: 100%;
+
+  border: white 4px solid;
+
+  box-shadow: 4px 4px 10px #2a5bfe;
+
+  animation: Shadow 2s infinite;
+
+  display: flex;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.article p {
+  font-size: 2rem;
+}

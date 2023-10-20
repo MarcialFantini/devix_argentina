@@ -4,6 +4,7 @@ import style from "./style.module.css";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import { useIntersectionObserver } from "@/hooks/observer";
 import { useRef } from "react";
+import Link from "next/link";
 
 function CardWorkBig({
   category,
@@ -28,7 +29,9 @@ function CardWorkBig({
       </picture>
       <p className={style.category}> {category} </p>
       <h3 className={style.title}> {title} </h3>
-      {/* <p className={style.more}>Read more</p> */}
+      <p className={style.more}>
+        <Link href={"/blog/1"}>Read more</Link>
+      </p>
     </article>
   );
 }

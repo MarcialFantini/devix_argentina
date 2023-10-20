@@ -54,6 +54,16 @@
   font-size: 1.6rem;
 }
 
+@media (min-width: 600px) {
+  .title {
+    font-size: 6rem;
+  }
+
+  .text {
+    font-size: 3.4rem;
+  }
+}
+
 @media (max-width: 425px) {
   .containerGrid {
     grid-template-columns: 1fr;

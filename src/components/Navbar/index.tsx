@@ -6,8 +6,12 @@ import srcIconNav from "../../../public/navbar/Frame.png";
 
 import style from "./style.module.css";
 import { smoothScrollToElement } from "@/utils/scrollToElement";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 function Navbar() {
+  const pathname = usePathname();
+
   const [isActive, setIsActive] = useState(false);
 
   const handlerToggleActive = () => setIsActive((prev) => !prev);
@@ -33,15 +37,44 @@ function Navbar() {
                 alt="icon nav"
               ></Image>
             </picture>
-            <h2 className={style.title}>Devix</h2>
+            {pathname !== "/" ? (
+              <Link href={"/"}>
+                <h2 className={style.title}>Devix</h2>
+              </Link>
+            ) : (
+              <h2 className={style.title}>Devix</h2>
+            )}
           </div>
 
           <ul className={style.list}>
-            <li onClick={handlerScroll("compañía")}>Compañía</li>
-            <li onClick={handlerScroll("servicios")}>Servicios</li>
-            <li onClick={handlerScroll("proyectos")}>Proyectos</li>
+            <li onClick={handlerScroll("compañía")}>
+              {pathname === "/" ? "Compañía" : <Link href={"/"}>Compañía</Link>}
+            </li>
+            <li onClick={handlerScroll("servicios")}>
+              {pathname === "/" ? (
+                "Servicios"
+              ) : (
+                <Link href={"/"}>Servicios</Link>
+              )}
+            </li>
+            <li onClick={handlerScroll("proyectos")}>
+              {pathname === "/" ? (
+                "Proyectos"
+              ) : (
+                <Link href={"/"}>Proyectos</Link>
+              )}
+            </li>
             <li onClick={handlerScroll("contact")}>
-              <button className={style.button}>Contacto</button>
+              <button className={style.button}>
+                {" "}
+                {pathname === "/" ? (
+                  "Contacto"
+                ) : (
+                  <Link className={style.Link} href={"/"}>
+                    Contacto
+                  </Link>
+                )}
+              </button>
             </li>
           </ul>
           <button onClick={handlerToggleActive} className={style.buttonActive}>
@@ -50,11 +83,20 @@ function Navbar() {
         </div>
       </nav>
       <ul style={{ right: isActive ? 0 : "-100%" }} className={style.secondary}>
-        <li onClick={handlerToggleScroll("compañía")}>Compañía</li>
-        <li onClick={handlerToggleScroll("servicios")}>Servicios</li>
-        <li onClick={handlerToggleScroll("proyectos")}>Proyectos</li>
+        <li onClick={handlerToggleScroll("compañía")}>
+          {pathname === "/" ? "Compañía" : <Link href={"/"}>Compañía</Link>}
+        </li>
+        <li onClick={handlerToggleScroll("servicios")}>
+          {" "}
+          {pathname === "/" ? "Servicios" : <Link href={"/"}>Servicios</Link>}
+        </li>
+        <li onClick={handlerToggleScroll("proyectos")}>
+          {pathname === "/" ? "Proyectos" : <Link href={"/"}>Proyectos</Link>}
+        </li>
         <li onClick={handlerToggleScroll("contact")}>
-          <button className={style.button}>Contacto</button>
+          <button className={style.button}>
+            {pathname === "/" ? "Contacto" : <Link href={"/"}>Contacto</Link>}
+          </button>
         </li>
       </ul>
     </>

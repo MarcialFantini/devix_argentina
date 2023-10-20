@@ -15,7 +15,7 @@
   transition: all 0.3s;
   transform: translate(200px);
 
-  background: url("../../../public/banner/code.jpg");
+  background: url("../../../public/banner/code.webp");
 }
 
 .active {

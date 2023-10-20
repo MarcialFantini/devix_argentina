@@ -14,11 +14,11 @@ export default function Home() {
       <HeroHome></HeroHome>
       <WeOffer></WeOffer>
       <BarHomeCompany></BarHomeCompany>
-      <BannerImage src={"/banner/work.jpg"}></BannerImage>
+      <BannerImage src={"/banner/work.webp"}></BannerImage>
       <ChooseUs></ChooseUs>
-      <BannerImage src={"/banner/code.jpg"}></BannerImage>
+      <BannerImage src={"/banner/code.webp"}></BannerImage>
       <OurWork></OurWork>
-      <BannerImage src={"/banner/contact.jpg"}>
+      <BannerImage src={"/banner/contact.webp"}>
         {<ContactCard></ContactCard>}
       </BannerImage>
 

@@ -32,7 +32,7 @@ function CardWorkBig({
       <h3 className={style.title}> {title} </h3>
       <p className={style.more}>
         <Link className={style.link} href={`/blog/${index}`}>
-          Read more
+          Leer mas
         </Link>
       </p>
     </article>

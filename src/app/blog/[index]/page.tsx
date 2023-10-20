@@ -13,7 +13,7 @@ function BlogRouter({ params }: { params: { index: number } }) {
           <Image
             className={style.img}
             src={list[params.index].src}
-            alt=""
+            alt={list[params.index].title}
           ></Image>
         </picture>
         <p>

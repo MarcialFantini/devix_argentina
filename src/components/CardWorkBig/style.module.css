@@ -55,7 +55,13 @@
 .more,
 .link {
   font-size: 1.6rem;
-  color: #728095;
+  color: white;
   margin: 0;
   text-decoration: none;
+
+  transition: all 0.3s;
+}
+
+.link:hover {
+  color: #ffa800;
 }

@@ -9,12 +9,13 @@ import Link from "next/link";
 function CardWorkBig({
   category,
   title,
-
+  index,
   src,
 }: {
   category: string;
   title: string;
   src: string | StaticImport;
+  index: number;
 }) {
   const ref = useRef(null);
   const { isVisible } = useIntersectionObserver(ref);
@@ -30,7 +31,9 @@ function CardWorkBig({
       <p className={style.category}> {category} </p>
       <h3 className={style.title}> {title} </h3>
       <p className={style.more}>
-        <Link href={"/blog/1"}>Read more</Link>
+        <Link className={style.link} href={`/blog/${index}`}>
+          Read more
+        </Link>
       </p>
     </article>
   );

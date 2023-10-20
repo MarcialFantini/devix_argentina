@@ -52,8 +52,10 @@
   margin: 0;
 }
 
-.more {
+.more,
+.link {
   font-size: 1.6rem;
   color: #728095;
   margin: 0;
+  text-decoration: none;
 }

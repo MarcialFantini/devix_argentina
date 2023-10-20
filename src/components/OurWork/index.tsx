@@ -22,16 +22,19 @@ function OurWork() {
         </div>
         <div className={style.column}>
           <CardWorkBig
+            index={0}
             category="Website"
             title="My City Lawyers Directory"
             src={srcImage1}
           ></CardWorkBig>
           <CardWorkBig
+            index={1}
             src={srcImage2}
             category="Website"
             title="Zjox Softwarks"
           ></CardWorkBig>
           <CardWorkBig
+            index={2}
             src={srcImage3}
             category="Website"
             title="Cultivating A Sustainable Future "
@@ -39,11 +42,13 @@ function OurWork() {
         </div>
         <div className={style.column}>
           <CardWorkBig
+            index={3}
             src={srcImage4}
             category="Website"
             title="AVJI "
           ></CardWorkBig>
           <CardWorkBig
+            index={4}
             src={srcImage5}
             category="Website"
             title="Power up with coffee"

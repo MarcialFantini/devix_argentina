@@ -20,25 +20,27 @@ export const data: props[] = [
     text: "Brindamos y nos ajustamos a tus estilos para tus paginas web que desarrollaremos.",
   },
   {
-    title: "Landing page",
-    src: item1,
-    text: "Creamos tu primera pagina web para que tengas una presencia web y consigas mas clientes. ",
+    title: "SEO",
+    src: item4,
+    text: "Integramos tecnologías para que puedas aparecer de mejor manera en los buscadores de internet. ",
   },
+
   {
     title: "Digital marketing",
     src: item2,
     text: "Nos encargamos de planear y ejecutar tus estrategias de marketing digital.",
   },
   {
+    title: "Landing page",
+    src: item1,
+    text: "Creamos tu primera pagina web para que tengas una presencia web y consigas mas clientes. ",
+  },
+  {
     title: "Blogs",
     src: item3,
     text: "Servicio de creación de blog, newsletter o sistema en el cual vas a poder comunicar temas a tus posibles clientes.",
   },
-  {
-    title: "SEO",
-    src: item4,
-    text: "Integramos tecnologías para que puedas aparecer de mejor manera en los buscadores de internet. ",
-  },
+
   {
     title: "eCommerce",
     src: item5,

@@ -16,18 +16,9 @@ function BlogRouter({ params }: { params: { index: number } }) {
             alt={list[params.index].title}
           ></Image>
         </picture>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-          laboriosam assumenda ipsum veniam illum illo sed, sint non id
-          molestias ad quasi nostrum vel corporis nulla. Placeat in consectetur
-          consequatur.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore atque
-          in neque provident molestiae corporis! Magni inventore architecto non,
-          sit consequuntur totam eveniet suscipit accusamus, sequi eaque dolorem
-          explicabo provident?
-        </p>
+        {list[params.index].text.map((item) => {
+          return <p>{item}</p>;
+        })}
       </article>
     </section>
   );

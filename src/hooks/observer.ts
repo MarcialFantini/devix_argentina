@@ -12,7 +12,7 @@ export const useIntersectionObserver = (ref: MutableRefObject<null>) => {
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.25 }
     ); // Define el porcentaje de intersección requerido para la activación
 
     if (ref.current) {

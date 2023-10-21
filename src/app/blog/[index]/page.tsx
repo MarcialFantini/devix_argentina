@@ -16,8 +16,8 @@ function BlogRouter({ params }: { params: { index: number } }) {
             alt={list[params.index].title}
           ></Image>
         </picture>
-        {list[params.index].text.map((item) => {
-          return <p>{item}</p>;
+        {list[params.index].text.map((item, index) => {
+          return <p key={index}>{item}</p>;
         })}
       </article>
     </section>

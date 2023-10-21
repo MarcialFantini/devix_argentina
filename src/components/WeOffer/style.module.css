@@ -3,7 +3,7 @@
 
   margin: auto;
 
-  padding: 150px 5%;
+  padding: 100px 5%;
 
   overflow: hidden;
 }
@@ -15,10 +15,15 @@
   column-gap: 40px;
 }
 
+.sectionOffer h4 {
+  font-size: 3rem;
+  text-align: center;
+}
+
 .title {
   color: white;
   text-shadow: #fe2afc 5px 5px 10px;
-  text-align: center;
+  text-align: start;
   font-size: 4rem;
   font-style: normal;
   font-weight: 700;

@@ -13,7 +13,7 @@ interface props {
   text: string;
 }
 
-export const data: props[] = [
+export const data1: props[] = [
   {
     title: "Branding",
     src: item6,
@@ -30,6 +30,9 @@ export const data: props[] = [
     src: item2,
     text: "Nos encargamos de planear y ejecutar tus estrategias de marketing digital.",
   },
+];
+
+export const data2 = [
   {
     title: "Landing page",
     src: item1,

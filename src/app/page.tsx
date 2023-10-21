@@ -8,6 +8,7 @@ import BannerImage from "@/components/BannerImage";
 
 import ContactCard from "@/components/ContactCard";
 import BannerVideo from "@/components/BannerVideo";
+import Services from "@/components/Services";
 
 export default function Home() {
   return (
@@ -16,13 +17,17 @@ export default function Home() {
       <WeOffer></WeOffer>
       <BarHomeCompany></BarHomeCompany>
       <BannerVideo src={"/banner/code.webm"}></BannerVideo>
-
+      {/* <Services></Services> */}
+      {/* <BannerVideo src={"/banner/code.webm"}></BannerVideo> */}
       <ChooseUs></ChooseUs>
       <BannerImage src={"/banner/code.webp"}></BannerImage>
       <OurWork></OurWork>
-      <BannerImage src={"/banner/contact.webp"}>
+      {/* <BannerImage src={"/banner/contact.webp"}>
         {<ContactCard></ContactCard>}
-      </BannerImage>
+      </BannerImage> */}
+      <BannerVideo invert src={"/banner/contact.webm"}>
+        {<ContactCard></ContactCard>}
+      </BannerVideo>
       {/* <Discuss></Discuss> */}
     </main>
   );

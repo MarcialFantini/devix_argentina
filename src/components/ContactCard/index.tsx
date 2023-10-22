@@ -7,9 +7,9 @@ import social3 from "../../../public/social/facebook.png";
 import social4 from "../../../public/social/linkedin.png";
 function ContactCard() {
   return (
-    <section id="contact" className={style.containerSection}>
+    <section className={style.containerSection}>
       <h2 className={style.title}>Contacto</h2>
-      {/* <p className={style.item}>+555555- 555 -555</p> */}
+
       <div className={style.row}>
         <picture>
           <Image className={style.img} src={social1} alt=""></Image>

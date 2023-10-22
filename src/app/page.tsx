@@ -9,6 +9,7 @@ import BannerImage from "@/components/BannerImage";
 import BannerVideo from "@/components/BannerVideo";
 
 import FormComponent from "@/components/ContactForm";
+import ContactComplete from "@/components/ContactComplete";
 
 export default function Home() {
   return (
@@ -17,12 +18,10 @@ export default function Home() {
       <WeOffer></WeOffer>
       <BarHomeCompany></BarHomeCompany>
       <BannerVideo src={"/banner/code.webm"}></BannerVideo>
-
       <ChooseUs></ChooseUs>
       <BannerImage src={"/banner/code.webp"}></BannerImage>
       <OurWork></OurWork>
-
-      <FormComponent></FormComponent>
+      <ContactComplete></ContactComplete>
     </main>
   );
 }

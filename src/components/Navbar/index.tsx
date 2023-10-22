@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import srcIconNav from "../../../public/navbar/Frame.png";
 
 import style from "./style.module.css";
@@ -20,7 +20,9 @@ function Navbar() {
     smoothScrollToElement(id);
   };
 
-  const handlerScroll = (id: string) => () => smoothScrollToElement(id);
+  const handlerScroll = (id: string) => () => {
+    smoothScrollToElement(id);
+  };
 
   return (
     <>

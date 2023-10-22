@@ -7,7 +7,7 @@
   flex-direction: column;
   align-items: flex-start;
 
-  padding: 10px;
+  padding: 20px;
   border-radius: 10px;
   border: 1px solid #a1aebf;
 
@@ -54,4 +54,16 @@
   line-height: 25px; /* 142.857% */
   letter-spacing: 0.28px;
   margin: 0;
+}
+
+.link {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+
+  transition: all 0.3s;
+}
+
+.link:hover {
+  color: gold;
 }

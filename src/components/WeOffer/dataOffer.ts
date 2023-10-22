@@ -11,40 +11,46 @@ interface props {
   title: string;
   src: string | StaticImport;
   text: string;
+  index: number;
 }
 
 export const data1: props[] = [
   {
-    title: "Branding",
-    src: item6,
-    text: "Brindamos y nos ajustamos a tus estilos para tus paginas web que desarrollaremos.",
-  },
-  {
-    title: "SEO",
-    src: item4,
-    text: "Integramos tecnologías para que puedas aparecer de mejor manera en los buscadores de internet. ",
-  },
-
-  {
+    index: 0,
     title: "Digital marketing",
     src: item2,
-    text: "Nos encargamos de planear y ejecutar tus estrategias de marketing digital.",
+    text: "Estrategia global que incluye branding, SEO y otros elementos para el éxito en línea.",
+  },
+  {
+    index: 1,
+    title: "Branding",
+    src: item6,
+    text: "Construcción de identidad de marca en línea para conectar con la audiencia.",
+  },
+  {
+    index: 2,
+    title: "SEO",
+    src: item4,
+    text: "Optimización web para mejorar visibilidad en motores de búsqueda y atraer tráfico orgánico.",
   },
 ];
 
 export const data2 = [
   {
+    index: 3,
     title: "Landing page",
     src: item1,
     text: "Creamos tu primera pagina web para que tengas una presencia web y consigas mas clientes. ",
   },
   {
+    index: 4,
     title: "Blogs",
     src: item3,
     text: "Servicio de creación de blog, newsletter o sistema en el cual vas a poder comunicar temas a tus posibles clientes.",
   },
 
   {
+    index: 5,
     title: "eCommerce",
     src: item5,
     text: "Servicio de creación de eCommerce, en el cual nos encargamos de crear para que puedas vender tus servicios y productos. ",

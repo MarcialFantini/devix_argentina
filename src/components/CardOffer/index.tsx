@@ -5,14 +5,16 @@ import Image from "next/image";
 import style from "./style.module.css";
 import { useIntersectionObserver } from "@/hooks/observer";
 import { useRef, useState } from "react";
+import Link from "next/link";
 
 interface props {
   title: string;
   src: string | StaticImport;
   text: string;
+  index: number;
 }
 
-function CardOffer({ title, src, text }: props) {
+function CardOffer({ title, src, text, index }: props) {
   const ref = useRef(null);
   const { isVisible } = useIntersectionObserver(ref);
   return (
@@ -27,6 +29,9 @@ function CardOffer({ title, src, text }: props) {
       </picture>
       <h3 className={style.title}> {title} </h3>
       <p className={style.text}> {text} </p>
+      <Link className={style.link} href={`/services/${index}`}>
+        Leer mas{" "}
+      </Link>
     </article>
   );
 }

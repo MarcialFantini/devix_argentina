@@ -19,6 +19,7 @@ function WeOffer() {
         {data1.map((item, index) => {
           return (
             <CardOffer
+              index={item.index}
               key={item.title + index}
               title={item.title}
               src={item.src}
@@ -26,12 +27,13 @@ function WeOffer() {
             ></CardOffer>
           );
         })}
-      </div>{" "}
+      </div>
       <h4>Tipos de Paginas</h4>
       <div className={style.gridOffer}>
         {data2.map((item, index) => {
           return (
             <CardOffer
+              index={item.index}
               key={item.title + index}
               title={item.title}
               src={item.src}

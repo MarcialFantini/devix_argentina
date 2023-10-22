@@ -9,7 +9,11 @@ function ServicesRouter({ params }: { params: { id: number } }) {
         <h1 className={style.title}>{data[params.id].title}</h1>
         <h3 className={style.subtitle}>Web site</h3>
         <picture className={style.picture}>
-          <Image src={""} alt=""></Image>
+          <Image
+            className={style.img}
+            src={data[params.id].src}
+            alt={data[params.id].title}
+          ></Image>
         </picture>
 
         {data[params.id].text.map((item, key) => {

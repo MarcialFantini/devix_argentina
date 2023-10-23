@@ -12,7 +12,6 @@
   font-size: 5rem;
   color: white;
   text-shadow: #fe2afc 5px 5px 10px;
-  margin: 0;
 }
 
 .subtitle {
@@ -39,6 +38,8 @@
   animation: Shadow 2s infinite;
 
   display: flex;
+
+  margin: 40px 0;
 }
 
 .img {

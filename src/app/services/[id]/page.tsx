@@ -7,7 +7,6 @@ function ServicesRouter({ params }: { params: { id: number } }) {
     <section className={style.containerSection}>
       <article className={style.article}>
         <h1 className={style.title}>{data[params.id].title}</h1>
-        <h3 className={style.subtitle}>Web site</h3>
         <picture className={style.picture}>
           <Image
             className={style.img}

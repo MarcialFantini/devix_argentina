@@ -1,6 +1,6 @@
 "use client";
 import style from "./style.module.css";
-import srcChoose from "../../../public/chooseUs/vector.png";
+import srcChoose from "../../../public/chooseUs/star.webp";
 import Image from "next/image";
 import { useRef } from "react";
 import { useIntersectionObserver } from "@/hooks/observer";

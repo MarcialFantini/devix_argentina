@@ -84,14 +84,32 @@ function Navbar() {
       <ul style={{ right: isActive ? 0 : "-100%" }} className={style.secondary}>
         <li onClick={handlerToggleScroll("servicios")}>
           {" "}
-          {pathname === "/" ? "Servicios" : <Link href={"/"}>Servicios</Link>}
+          {pathname === "/" ? (
+            "Servicios"
+          ) : (
+            <Link className={style.linkList} href={"/"}>
+              Servicios
+            </Link>
+          )}
         </li>
         <li onClick={handlerToggleScroll("proyectos")}>
-          {pathname === "/" ? "Proyectos" : <Link href={"/"}>Proyectos</Link>}
+          {pathname === "/" ? (
+            "Proyectos"
+          ) : (
+            <Link className={style.linkList} href={"/"}>
+              Proyectos
+            </Link>
+          )}
         </li>
         <li onClick={handlerToggleScroll("contact")}>
           <button className={style.button}>
-            {pathname === "/" ? "Contacto" : <Link href={"/"}>Contacto</Link>}
+            {pathname === "/" ? (
+              "Contacto"
+            ) : (
+              <Link className={style.linkList} href={"/"}>
+                Contacto
+              </Link>
+            )}
           </button>
         </li>
       </ul>

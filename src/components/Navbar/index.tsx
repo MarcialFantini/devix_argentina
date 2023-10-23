@@ -49,9 +49,6 @@ function Navbar() {
           </div>
 
           <ul className={style.list}>
-            <li onClick={handlerScroll("compañía")}>
-              {pathname === "/" ? "Compañía" : <Link href={"/"}>Compañía</Link>}
-            </li>
             <li onClick={handlerScroll("servicios")}>
               {pathname === "/" ? (
                 "Servicios"
@@ -85,9 +82,6 @@ function Navbar() {
         </div>
       </nav>
       <ul style={{ right: isActive ? 0 : "-100%" }} className={style.secondary}>
-        <li onClick={handlerToggleScroll("compañía")}>
-          {pathname === "/" ? "Compañía" : <Link href={"/"}>Compañía</Link>}
-        </li>
         <li onClick={handlerToggleScroll("servicios")}>
           {" "}
           {pathname === "/" ? "Servicios" : <Link href={"/"}>Servicios</Link>}

@@ -27,7 +27,8 @@ function HeroHome() {
           Devix <span className={style.span}>Argentina</span>
         </h1>
         <p className={style.text}>
-          Socios Argentinos dedicados al desarrollo web y al marketing digital.
+          Socios Argentinos dedicados al desarrollo web y al marketing digital
+          con mucha experiencia solucionando problemas.
         </p>
       </div>
     </header>

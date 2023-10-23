@@ -9,9 +9,9 @@ function WeOffer() {
   return (
     <section id="servicios" className={style.sectionOffer}>
       <h2 className={style.title}>Nuestros servicios</h2>
-      {/* <p className={style.text}>
-        Servicios web de calidad hecho bajo tu medida y parámetros.
-      </p> */}
+      <p className={style.text}>
+        Creamos o remodelamos el apartado digitalizado de tu negocio.
+      </p>
       <h4 style={{ padding: "35px 0 0 0" }}>
         Exprimimos tu potencial de ventas
       </h4>

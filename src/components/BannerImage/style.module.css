@@ -1,6 +1,7 @@
 .containerBanner {
-  min-height: 90vh;
   width: 100%;
+
+  min-height: 60vh;
 
   display: flex;
   align-items: center;

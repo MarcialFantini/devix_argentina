@@ -12,7 +12,7 @@ function OurWork() {
     <section id="proyectos" className={style.section}>
       <div className={style.containerGrid}>
         <div className={style.column + " " + style.columnFirst}>
-          <h2 className={style.title}>Alguno de nuestros proyectos:</h2>
+          <h2 className={style.title}>Algunos de nuestros proyectos:</h2>
           <p className={style.text}>
             Estos son modelos paradigmáticos de paginas web las cuales podemos
             crear, y adaptarlas bajo tus parámetros de forma ideal para tu

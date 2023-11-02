@@ -111,7 +111,7 @@ const FormComponent = () => {
           Correo:
           <input
             required
-            type="text"
+            type="email"
             name="email"
             value={formData.email}
             onChange={handleInputChange}
@@ -123,7 +123,7 @@ const FormComponent = () => {
           Teléfono :
           <input
             required
-            type="text"
+            type="number"
             name="phone"
             value={formData.phone}
             onChange={handleInputChange}

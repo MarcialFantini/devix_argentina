@@ -4,9 +4,7 @@ import WeOffer from "@/components/WeOffer";
 import ChooseUs from "@/components/ChooseUs";
 import OurWork from "@/components/OurWork";
 import BannerImage from "@/components/BannerImage";
-
 import BannerVideo from "@/components/BannerVideo";
-
 import ContactComplete from "@/components/ContactComplete";
 
 export default function Home() {

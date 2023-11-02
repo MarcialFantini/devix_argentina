@@ -14,25 +14,45 @@ function ContactCard() {
         <picture>
           <Image className={style.img} src={social1} alt=""></Image>
         </picture>{" "}
-        <p className={style.item}> devixargentina@gmail.com</p>
+        <a href="mailto:devixargentina@gmail.com" className={style.item}>
+          devixargentina@gmail.com
+        </a>
       </div>
       <div className={style.row}>
         <picture>
           <Image className={style.img} src={social2} alt=""></Image>
         </picture>
-        <p className={style.item}> devix_argentina</p>
+        <a
+          href="https://www.instagram.com/devix_argentina/"
+          target="_blank"
+          className={style.item}
+        >
+          devix_argentina
+        </a>
       </div>
       <div className={style.row}>
         <picture>
           <Image className={style.img} src={social3} alt=""></Image>
         </picture>{" "}
-        <p className={style.item}> Devix Argentina</p>
+        <a
+          href="https://www.facebook.com/devix.argentina"
+          target="_blank"
+          className={style.item}
+        >
+          Devix Argentina
+        </a>
       </div>
       <div className={style.row}>
         <picture>
           <Image className={style.img} src={social4} alt=""></Image>
         </picture>
-        <p className={style.item}> Devix Argentina</p>
+        <a
+          href="https://www.linkedin.com/in/devix-argentina-66504a297/"
+          target="_blank"
+          className={style.item}
+        >
+          Devix Argentina
+        </a>
       </div>
     </section>
   );
